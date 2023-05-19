@@ -21,7 +21,7 @@ app=Flask(__name__)
 
 @app.route('/')
 def hello():
-    return render_template("model.html")
+    return render_template("index.html")
 
 
 
@@ -97,7 +97,7 @@ def submit_data():
         
         
     #return  'nothing' 
-    return render_template('model.html',tables=[df2.to_html(classes='job')],titles=['na','Job'])
+    return render_template('index.html',tables=[df2.to_html(classes='job')],titles=['na','Job'])
         
         
         
